@@ -6,12 +6,17 @@
   "scripts": {
     "lint": "eslint .",
     "test": "npm run lint",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish --access public && semantic-release post"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/pixore/eslint-config.git"
   },
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
   "author": "Jose Albizures <albizures3601@gmail.com>",
   "peerDependencies": {
     "eslint": ">= 3"
