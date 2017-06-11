@@ -1,0 +1,1 @@
+# Pixore eslint-config
