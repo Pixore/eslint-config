@@ -13,7 +13,7 @@ before_script:
 script:
   - npm t
 after_success:
-  - npm run semantic-release
+  - TRAVIS_JOB_NUMBER=WORKAROUND.1 npm run semantic-release
 branches:
   except:
     - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
