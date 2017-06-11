@@ -1,10 +1,12 @@
 {
   "name": "@pixore/eslint-config",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "npm run lint",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -15,7 +17,8 @@
     "eslint": ">= 3"
   },
   "devDependencies": {
-    "eslint": "^3.19.0"
+    "eslint": "^3.19.0",
+    "semantic-release": "^6.3.6"
   },
   "license": "MIT",
   "dependencies": {
