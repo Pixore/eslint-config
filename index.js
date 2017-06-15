@@ -1,5 +1,5 @@
 module.exports = {
-  extends: 'standard',
+  extends: ['standard', 'standard-react'],
   plugins: [
     'standard'
   ],
