@@ -1,9 +1,12 @@
 module.exports = {
   extends: ['standard', 'standard-react'],
   plugins: [
-    'standard'
+    'standard',
+    'chai-friendly'
   ],
   rules: {
+    'no-unused-expressions': 'off',
+    'chai-friendly/no-unused-expressions': 'error',
     'prefer-const': 'error',
     camelcase: 0,
     'no-alert': 'error',
